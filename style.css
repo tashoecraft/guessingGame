@@ -1,0 +1,15 @@
+
+body {
+  background-color: #19B7CA;
+}
+
+.form-control {
+  width: 50%;
+}
+.form-group {
+  margin-bottom: 50px;
+}
+.newWidth {
+  width: 25%;
+  background-color: #3064F2;
+}
