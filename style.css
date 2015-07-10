@@ -3,6 +3,10 @@ body {
   background-color: #19B7CA;
 }
 
+.header {
+  text-align: center;
+}
+
 .form-control {
   width: 50%;
 }
@@ -12,4 +16,8 @@ body {
 .newWidth {
   width: 25%;
   background-color: #3064F2;
+}
+
+form {
+  text-align: center;
 }
