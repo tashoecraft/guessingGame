@@ -1,23 +1,9 @@
 
 body {
+  text-align: center;
   background-color: #19B7CA;
 }
 
-.header {
-  text-align: center;
-}
-
-.form-control {
-  width: 50%;
-}
-.form-group {
-  margin-bottom: 50px;
-}
-.newWidth {
-  width: 25%;
-  background-color: #3064F2;
-}
-
-form {
+input {
   text-align: center;
 }

@@ -6,21 +6,30 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
   </head>
+
   <body class="container-fluid">
-    <div class="page-header">
-      <h1 class="col-md-12 col-sm-12 header">Welcome to the Guessing Game</h1>
+    <div class="page-header row">
+      <h1 class="col-md-12 col-sm-12 col-xs-12 header">Austin's Guessing Game</h1>
     </div>
-    <form>
-      <div class="form-group">
-        <label>Guess a number</label>
-        <input class="form-control" type="text"></input>
-        <input class="btn btn-default form-control" type="submit"></input>
-      </div>
-      <div class="">
-        <button class="btn btn-default form-control newWidth" type="submit">Play Again?</button>
-        <button class="btn btn-default form-control newWidth" type="submit">Answer</button>
-      </div>
-    </form>
+    <div class="row">
+      <form class="centered col-md-offset-3 col-sm-offset-2 col-xs-offset-1">
+        <div class="col-md-8 col-sm-8 col-xs-10">
+          <div class="col-md-4 col-md-offset-4">
+            <input id="numberInput" class="form-control input-lg" type="text" placeholder="Input Number 1-100"></input>
+          </div>
+          <button id="submitInput" class="btn btn-primary col-md-4 col-md-offset-4" type="button">Submit Answer</button>
+          <button id="newGame" class="col-md-2 col-sm-2 col-xs-2 col-md-offset-4 col-sm-offset-4 col-xs-offset-4 btn btn-warning " type="button">New Game</button>
+          <button id="answer" class="col-md-2 col-sm-2 col-xs-2  btn btn-warning" type="button">Answer</button>
+        </div>
+          <div class="outputs row col-md-8 col-sm-8 col-xs-10">
+            <h3 id="guessLeft"></h3>
+            <h3 id="guesses"></h3>
+            <h3 id="outputText"></h3>
+          </div>
+        </div>
+      </form>
+    </div>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script type="text/javascript" src="app.js"></script>
   </body>
