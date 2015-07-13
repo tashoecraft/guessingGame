@@ -31,6 +31,9 @@ Game.prototype.turnsLeft = function() {
 
 Game.prototype.checkGuess = function(number) {
   if(number === this.numberToGuess) {
+    $("body").css({
+      "background-color": "red"
+    });
     this.output("you got it!");
     this.numberOfGuesses = 0;
   } else {
@@ -126,6 +129,9 @@ var game = new Game();
 game.output("Guess a number between 1 - 100");
 
 $("#newGame").click(function() {
+  $("body").css({
+    "background-color": "#19B7CA"
+  })
   game = new Game();
   game.output("New Game");
 });
